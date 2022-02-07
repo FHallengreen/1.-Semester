@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7c08621a-fe23-4004-aca2-cc3b652dc0f3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/makeACake/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/makeACake/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +112,8 @@
       <workItem from="1644247059893" duration="28000" />
       <workItem from="1644247118360" duration="7457000" />
       <workItem from="1644254645645" duration="44000" />
+      <workItem from="1644254724256" duration="107000" />
+      <workItem from="1644254836189" duration="124000" />
     </task>
     <servers />
   </component>
