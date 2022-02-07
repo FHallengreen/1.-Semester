@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c08621a-fe23-4004-aca2-cc3b652dc0f3" name="Changes" comment="" />
+    <list default="true" id="7c08621a-fe23-4004-aca2-cc3b652dc0f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/makeACake/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/makeACake/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +83,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -107,6 +112,8 @@
       <updated>1644243010467</updated>
       <workItem from="1644243012329" duration="1960000" />
       <workItem from="1644247059893" duration="28000" />
+      <workItem from="1644247118360" duration="7457000" />
+      <workItem from="1644254645645" duration="44000" />
     </task>
     <servers />
   </component>
