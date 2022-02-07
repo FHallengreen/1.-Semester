@@ -8,6 +8,6 @@ public class Main {
     double weight = 9.45;
     boolean isCat = true;
 
-        System.out.println(name + "er " + age + " år gammel og vejer " + weight + " kg, " + "hans kattetilstand er " + isCat);
+        System.out.printf(" %s er %d år gammel og vejer %.1f kg , hans kattetilstand er %s", name, age , weight , isCat);
     }
 }
