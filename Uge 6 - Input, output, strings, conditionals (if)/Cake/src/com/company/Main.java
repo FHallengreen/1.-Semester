@@ -5,8 +5,6 @@ import java.util.Scanner;
 import java.util.stream.DoubleStream;
 
 public class Main {
-  public Main() {
-  }
 
   public static void main(String[] args) {
     Scanner scan = (new Scanner(System.in)).useLocale(Locale.ENGLISH);
@@ -39,20 +37,20 @@ public class Main {
     double[] vanillaKj = new double[]{195.0, 4.6, 17.0, 10.7, 5.9};
     double[] sugarKj = new double[]{400.0, 0.0, 100.0, 100.0, 0.0};
 
-    int sumCalories = (int) DoubleStream.of(new double[]{wheatKj[0] + eggKj[0] + vanillaKj[0], sugarKj[0]}).sum();
-    double sumProtein = DoubleStream.of(new double[]{wheatKj[1] + eggKj[1] + vanillaKj[1], sugarKj[1]}).sum();
-    double sumCarbs = DoubleStream.of(new double[]{wheatKj[2] + eggKj[2] + vanillaKj[2], sugarKj[2]}).sum();
-    double sumSugar = DoubleStream.of(new double[]{wheatKj[3] + eggKj[3] + vanillaKj[3], sugarKj[3]}).sum();
-    double sumFat = DoubleStream.of(new double[]{wheatKj[4] + eggKj[4] + vanillaKj[4], sugarKj[4]}).sum();
+    int sumCalories = (int) DoubleStream.of(wheatKj[0] + eggKj[0] + vanillaKj[0], sugarKj[0]).sum();
+    double sumProtein = DoubleStream.of(wheatKj[1] + eggKj[1] + vanillaKj[1], sugarKj[1]).sum();
+    double sumCarbs = DoubleStream.of(wheatKj[2] + eggKj[2] + vanillaKj[2], sugarKj[2]).sum();
+    double sumSugar = DoubleStream.of(wheatKj[3] + eggKj[3] + vanillaKj[3], sugarKj[3]).sum();
+    double sumFat = DoubleStream.of(wheatKj[4] + eggKj[4] + vanillaKj[4], sugarKj[4]).sum();
 
 
     System.out.println("\nKagen indeholder per 100 gram: \n\t" + sumCalories + " kcal \n\t" + sumProtein + " g protein\n\t"
         + sumCarbs + " g kulhydrater \n\t" + sumSugar + " g sukker \n\t" + sumFat + " g fedt \n");
 
 
-    double totalGram = (calculatedTotal / 100);
+    int totalGram = (calculatedTotal / 100);
 
-    System.out.println("Det svarer til at kage totalt har følgende macros:" + (sumCalories * totalGram)
+    System.out.println("Det svarer til at kagen totalt har følgende ernæringsindhold: \n\t" + (sumCalories * totalGram)
         + " kcal \n\t" + (sumProtein * totalGram) + " g protein \n\t" + (sumCarbs * totalGram) + " g kulhydrater \n\t"
         + (sumSugar * totalGram) + " g sukker \n\t" + (sumFat * totalGram) + " g fedt \n");
   }
