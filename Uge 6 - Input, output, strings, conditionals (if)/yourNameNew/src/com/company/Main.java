@@ -27,11 +27,11 @@ public class Main {
         if (yourName.equals("ja")) {
             System.out.println("Det var godt at høre!");
 
-        // ellers hvis brugeren indtaster nej, vil følgende besked blive printet
+            // ellers hvis brugeren indtaster nej, vil følgende besked blive printet
         } else if (yourName.equals("nej")) {
             System.out.println("Det var godt at høre!");
 
-        // hvis alt andet bliver indtastet, vil den lave fejl
+            // hvis alt andet bliver indtastet, vil den lave fejl
         } else System.out.println("Du har ikke indtastet ja eller nej, din bøv");
     }
 }
