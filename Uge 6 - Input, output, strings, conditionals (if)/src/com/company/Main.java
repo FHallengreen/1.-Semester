@@ -8,9 +8,7 @@ public class Main {
         String efternavn = "Efternavn: Hansen";
 
         System.out.printf("%s\n%s\n%s\n", fornavn, mellemnavn, efternavn);
-  /*  fornavn.substring(9);
-    mellemnavn.substring(11);
-    efternavn.substring(7);*/
+
         System.out.println(fornavn.substring(9) + mellemnavn.substring(11) + efternavn.substring(10));
     }
 }
