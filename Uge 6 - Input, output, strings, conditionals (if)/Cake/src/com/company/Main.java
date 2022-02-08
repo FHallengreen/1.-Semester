@@ -63,10 +63,15 @@ public class Main {
     /* til sidst ønsker jeg at udregne det totale ernæringsindhold for hele kagen. Først tages calculatedTotal og divideres med 100,
     for at gøre det nemmere at regne totalen ud */
 
-    int totalGram       = (calculatedTotal / 100);
+    int totalCalculated     = (calculatedTotal / 100);
+    double totalCalories    = (sumCalories * totalCalculated);
+    double totalProtein     = (sumProtein * totalCalculated);
+    double totalCarbs       = (sumCarbs * totalCalculated);
+    double totalSugar       = ( sumSugar * totalCalculated);
+    double totalFat         = ( sumFat * totalCalculated);
 
-    System.out.println("Det svarer til at kagen totalt har følgende ernæringsindhold: \n\t" + (sumCalories * totalGram)
-        + " kcal \n\t" + (sumProtein * totalGram) + " g protein \n\t" + (sumCarbs * totalGram) + " g kulhydrater \n\t"
-        + (sumSugar * totalGram) + " g sukker \n\t" + (sumFat * totalGram) + " g fedt \n");
+    System.out.println("Det svarer til at kagen totalt har følgende ernæringsindhold: \n\t" + totalCalories
+        + " kcal \n\t" + totalProtein + " g protein \n\t" + totalCarbs + " g kulhydrater \n\t"
+        + totalSugar + " g sukker \n\t" + totalFat + " g fedt");
   }
 }
