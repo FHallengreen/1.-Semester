@@ -23,8 +23,9 @@ public class Main {
 
         int lastWord        = potter.substring(fourthIndex,fifthIndex).length();
         String WordLast     = word.substring(lastWord-1);
-        char O = 'O';
-        char r = 'r';
+        int hexaStart       = firstWord.codePointAt(0);
+        int hexaSlut        = WordLast.codePointAt(0);
         System.out.printf("%s \n %s %s \n",word, firstWord, WordLast);
+        System.out.printf("%04x %04x", hexaStart, hexaSlut);
     }
 }

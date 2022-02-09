@@ -21,5 +21,14 @@ public class Main {
         String godTil = sarcasm.substring(11, 27).toLowerCase();
 
         System.out.println(duEr + sørme + godTil);
+
+        String jegVilSove = "jEg ViL sOvE";
+        System.out.println("jEg ViL sOvE");
+        String jeg = jegVilSove.substring(0,1).toUpperCase();
+        String eg = jegVilSove.substring(1,3).toLowerCase();
+        String Vil = jegVilSove.substring(3,7).toLowerCase();
+        String Sove = jegVilSove.substring(7,12).toLowerCase();
+        System.out.println(jeg + eg +Vil+Sove);
+
     }
 }

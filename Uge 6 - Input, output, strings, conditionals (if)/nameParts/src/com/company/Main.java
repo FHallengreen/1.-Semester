@@ -9,7 +9,7 @@ public class Main {
         String mellemnavn = "Mellemnavn: Hallengreen";
         String efternavn = "Efternavn: Hansen";
 
-        System.out.printf("%s\n%s\n%s\n", fornavn, mellemnavn, efternavn);
+        System.out.printf("Mit navn er: %s\n%s\n%s\n", fornavn, mellemnavn, efternavn);
 
         String semicolon = " ";
         int firstIndex = fornavn.indexOf(semicolon);
