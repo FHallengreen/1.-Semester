@@ -7,7 +7,7 @@ public class Main {
   private static IntStream IntStream;
 
   public static void main(String[] args) {
-    String name1 = "Harry";
+    String name1 = "Frederik";
 
     final int name1_lengthtotal = name1.substring(0).length();
 
