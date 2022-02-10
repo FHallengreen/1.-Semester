@@ -1,20 +1,22 @@
 package com.company;
+
 import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
-      Random random = new Random();
+        Random random = new Random();
         int randomNumber = random.nextInt(6) + 1;
         System.out.println(randomNumber);
 
-        int count = 0;
+        int count = 4;
+
         System.out.println(++count);
-        1
+
         double count2 = 5;
         if (count2 >= 10) {
             System.out.println("Tal er større eller lig med 10");
-    }
+        }
 
         double number1 = 50;
         int number2 = 7;
@@ -29,6 +31,8 @@ public class Main {
         }
 */
         int Nummer = 9;
-        if(Nummer == 8){
+        if (Nummer == 8) {
             System.out.println(Nummer);
-}}}
+        }
+    }
+}

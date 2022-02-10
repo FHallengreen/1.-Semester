@@ -44,18 +44,21 @@ public class Main {
                             kalorier, Protein, Kulhydrater, Sukker & Fedt
     */
 
-        double[] wheatKj = {335.0, 16.0, 57.0, 0.7, 2.3};
+        //double[] wheatKj = {335.0, 16.0, 57.0, 0.7, 2.3};
         double[] eggKj = {137.0, 12.0, 1.3, 0.0, 2.8};
         double[] vanillaKj = {195.0, 4.6, 17.0, 10.7, 5.9};
         double[] sugarKj = {400.0, 0.0, 100.0, 100.0, 0.0};
 
+        FoodSort wheatX = new FoodSort(335.0, 16.0, 57.0, 0.7, 2.3);
+        FoodSort eggX = new FoodSort(335.0, 16.0, 57.0, 0.7, 2.3);
+
         // Alt regnes sammen (f.eks. alle kalorier under første array [0] osv.)
 
-        double sumCalories = DoubleStream.of(wheatKj[0] + eggKj[0] + vanillaKj[0], sugarKj[0]).sum();
-        double sumProtein = DoubleStream.of(wheatKj[1] + eggKj[1] + vanillaKj[1], sugarKj[1]).sum();
-        double sumCarbs = DoubleStream.of(wheatKj[2] + eggKj[2] + vanillaKj[2], sugarKj[2]).sum();
-        double sumSugar = DoubleStream.of(wheatKj[3] + eggKj[3] + vanillaKj[3], sugarKj[3]).sum();
-        double sumFat = DoubleStream.of(wheatKj[4] + eggKj[4] + vanillaKj[4], sugarKj[4]).sum();
+        double sumCalories = DoubleStream.of(wheatX.kcal + eggKj[0] + vanillaKj[0], sugarKj[0]).sum();
+        double sumProtein = DoubleStream.of(wheatX.getProtein() + eggKj[1] + vanillaKj[1], sugarKj[1]).sum();
+        double sumCarbs = DoubleStream.of(wheatX.getCarbs() + eggKj[2] + vanillaKj[2], sugarKj[2]).sum();
+        double sumSugar = DoubleStream.of(wheatX.getSugar() + eggKj[3] + vanillaKj[3], sugarKj[3]).sum();
+        double sumFat = DoubleStream.of(wheatX.getFat() + eggKj[4] + vanillaKj[4], sugarKj[4]).sum();
 
         System.out.println("\nKagen indeholder per 100 gram: \n\t" + sumCalories + " kcal \n\t" + sumProtein + " g protein\n\t"
                 + sumCarbs + " g kulhydrater \n\t" + sumSugar + " g sukker \n\t" + sumFat + " g fedt \n");
@@ -70,8 +73,14 @@ public class Main {
         double totalSugar = (sumSugar * totalCalculated);
         double totalFat = (sumFat * totalCalculated);
 
+
+
         System.out.println("Det svarer til at kagen totalt har følgende ernæringsindhold: \n\t" + totalCalories
                 + " kcal \n\t" + totalProtein + " g protein \n\t" + totalCarbs + " g kulhydrater \n\t"
                 + totalSugar + " g sukker \n\t" + totalFat + " g fedt");
     }
+
+
+
+
 }
