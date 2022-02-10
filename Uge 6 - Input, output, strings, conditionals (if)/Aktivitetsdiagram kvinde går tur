@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-10T10:38:12.375Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="p-ldDjtKxCx38Pkj5p1R" version="16.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-10T10:39:44.271Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="fU0fStbbUuqvCtCGr8CP" version="16.5.5" type="github">
   <diagram id="wSLr3k642MNmsQfnFpv6" name="Page-1">
     <mxGraphModel dx="788" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -48,7 +48,7 @@
             <mxPoint x="260" y="420" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GrF0gPf_P03jODH-kwDQ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GrF0gPf_P03jODH-kwDQ-18">
+        <mxCell id="GrF0gPf_P03jODH-kwDQ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.001;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GrF0gPf_P03jODH-kwDQ-18" target="GrF0gPf_P03jODH-kwDQ-33">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="480" y="280" as="targetPoint" />
           </mxGeometry>
@@ -56,24 +56,13 @@
         <mxCell id="GrF0gPf_P03jODH-kwDQ-18" value="Hvis det regner, tag en paraply med" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GrF0gPf_P03jODH-kwDQ-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GrF0gPf_P03jODH-kwDQ-20">
+        <mxCell id="GrF0gPf_P03jODH-kwDQ-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GrF0gPf_P03jODH-kwDQ-20" target="GrF0gPf_P03jODH-kwDQ-33">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="540" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GrF0gPf_P03jODH-kwDQ-20" value="Hvis solen skinner, tag solbriller med" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="380" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GrF0gPf_P03jODH-kwDQ-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GrF0gPf_P03jODH-kwDQ-25">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="105" y="620" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GrF0gPf_P03jODH-kwDQ-25" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="80" y="520" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="GrF0gPf_P03jODH-kwDQ-28" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="50" y="620" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GrF0gPf_P03jODH-kwDQ-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GrF0gPf_P03jODH-kwDQ-29" target="GrF0gPf_P03jODH-kwDQ-20">
           <mxGeometry relative="1" as="geometry" />
@@ -94,6 +83,17 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="100" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="GrF0gPf_P03jODH-kwDQ-39" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="70" y="540" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GrF0gPf_P03jODH-kwDQ-40" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="GrF0gPf_P03jODH-kwDQ-39" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GrF0gPf_P03jODH-kwDQ-41" value="Opgave 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="20" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
