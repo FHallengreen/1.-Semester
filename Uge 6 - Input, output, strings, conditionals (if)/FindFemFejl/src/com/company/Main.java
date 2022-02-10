@@ -19,7 +19,7 @@ public class Main {
         double number1 = 50;
         int number2 = 7;
         double resultat = number1 / number2;
-        if (resultat >= 7) {
+        if (resultat >= 5) {
             System.out.println("Resultat større end 7");
         }
 /*
