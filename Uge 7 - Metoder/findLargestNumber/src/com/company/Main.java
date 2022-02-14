@@ -26,3 +26,7 @@ public class Main {
     obj.largestNumber();
     }
 }
+
+//    public void derErFest(){
+//        System.out.println("Festen kører og kaliorene er " + kcal);
+//    }
