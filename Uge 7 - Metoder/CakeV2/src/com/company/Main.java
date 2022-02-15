@@ -4,88 +4,97 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+  Scanner scan = (new Scanner(System.in)).useLocale(Locale.ENGLISH);
+  int amountOfPeople = scan.nextInt();
 
-    // Vi opretter en metode til at gøre det nemmere at overskue udregningen.
+  int calculatedWheat;
+  int calculatedEgg;
+  int calculatedVanilla;
+  int calculatedSugar;
+  int calculatedEgg_TOGRAM;
 
-    public static void main(String[] args) {
+  // Vi opretter en metode til at definere opskriften. Først antal personer og så ingredienser.
 
-        Scanner scan = (new Scanner(System.in)).useLocale(Locale.ENGLISH);
-        System.out.println("Velkommen! Du ønsker at bage Fredes Drømmekage :-)\n");
-        System.out.println("hvor mange mennesker ønsker du at bage til?");
-        int amountOfPeople = scan.nextInt();
+  public void recipe(int defaultPeople, int wheat, int egg, int vanilla, int sugar) {
+    // Vi regner nu sammen hvor mange gram der skal bruges af de forskellige ingredienser.
+    int calculatedAmount = amountOfPeople / defaultPeople;
+    calculatedWheat = wheat * calculatedAmount;
+    calculatedEgg = (egg * calculatedAmount);
+    calculatedVanilla = vanilla * calculatedAmount;
+    calculatedSugar = sugar * calculatedAmount;
+    calculatedEgg_TOGRAM = calculatedEgg * 60;
 
-        // baseret på vores ingredienser bliver defineret. Følgende opskrift er 4 personer.
-        final int defaultPeople = 4;
-        final double wheat = 120;
-        final double egg = 2;
-        final double vanilla = 0.30;
-        final double sugar = 85.5;
+    System.out.printf("For at lave Fredes Drømmekage til %s personer, skal du bruge: " +
+            "\nHvede:%22s g  \nÆg:%21s stks.\nVanilje:%20s g \nSukker:%21s g\n", amountOfPeople,
+        calculatedWheat, calculatedEgg, calculatedVanilla, calculatedSugar);
 
-        // Vi regner nu sammen hvor mange gram der skal bruges af de forskellige ingredienser.
-        int convertedAmount = amountOfPeople / defaultPeople;
-        double calculatedWheat = wheat * convertedAmount;
-        double calculatedEgg = egg * convertedAmount;
-        double calculatedVanilla = vanilla * convertedAmount;
-        double calculatedSugar = sugar * convertedAmount;
-        double calculatedEggTOGRAM = egg * 60;
+  }
+  public void calculatedRecipe(int newWheat, int newEgg, int newVanilla, int newSugar) {
+    int totalWeight = newWheat + newEgg + newVanilla + newSugar;
 
-        // total vægt regnes sammen
-        int calculatedTotal = (int) (calculatedEggTOGRAM + calculatedVanilla + calculatedWheat + calculatedSugar);
+    System.out.printf("\nKagen vejer:%16s g \n" ,totalWeight);
 
-        // vi udskriver hvor meget der skal bruges af de enkelte ingredienser.
+  }
+  public void calculatedEnergy(double sumCalories,double sumProtein,double sumCarbs,double sumSugar,double sumFat){
 
-        System.out.printf("For at lave Fredes Drømmekage til %s personer, skal du bruge: " +
-                        "\nHvede: %17.0f g  \nÆg: %17.0f stks.\nVanilje: %15.2f g \nSukker: %16.0f g\n",
-                amountOfPeople, calculatedWheat, calculatedEgg, calculatedVanilla, calculatedSugar);
+    double totalCalories = sumCalories;
+
+    System.out.printf("Det svarer til at kagen totalt har følgende ernæringsindhold: %s",totalCalories);
+
+  }
+
+  public static void main(String[] args) {
+
+    Scanner scan = (new Scanner(System.in)).useLocale(Locale.ENGLISH);
+    System.out.println("Velkommen! Du ønsker at bage Fredes Drømmekage :-)\n");
+    System.out.println("hvor mange mennesker ønsker du at bage til?");
+
+    // baseret på vores ingredienser bliver defineret. Følgende opskrift er 4 personer.
+    Main obj = new Main();
+    obj.recipe(4, 120, 2, 5, 85);
+    obj.calculatedRecipe(obj.calculatedWheat, obj.calculatedEgg_TOGRAM, obj.calculatedVanilla, obj.calculatedSugar);
+
 
     /* Ekstra --ERNÆRINGSINDHOLD--
                 Laver en til at definere ernæringsindholdet i følgende rækkefølge:
                             kalorier, Protein, Kulhydrater, Sukker & Fedt
     */
-        FoodSort foodSortWheat = new FoodSort(335.0, 16.0, 57.0, 0.7, 2.3);
-        FoodSort foodSortEgg = new FoodSort(137.0, 12.0, 1.3, 0, 2.8);
-        FoodSort foodSortVanilla = new FoodSort(195.0, 4.6, 17.0, 10.7, 5.9);
-        FoodSort foodSortSugar = new FoodSort(400.0, 0.0, 100.0, 100.0, 0.0);
+    FoodSort foodSortWheat = new FoodSort(335.0, 16.0, 57.0, 0.7, 2.3);
+    FoodSort foodSortEgg = new FoodSort(137.0, 12.0, 1.3, 0, 2.8);
+    FoodSort foodSortVanilla = new FoodSort(195.0, 4.6, 17.0, 10.7, 5.9);
+    FoodSort foodSortSugar = new FoodSort(400.0, 0.0, 100.0, 100.0, 0.0);
 
-        double sumCalories = (foodSortWheat.kcal + foodSortEgg.kcal + foodSortVanilla.kcal + foodSortSugar.kcal);
-        double sumProtein = (foodSortWheat.protein + foodSortEgg.protein + foodSortVanilla.protein + foodSortSugar.protein);
-        double sumCarbs = (foodSortWheat.carbs + foodSortEgg.carbs + foodSortVanilla.carbs + foodSortSugar.carbs);
-        double sumSugar = (foodSortWheat.sugar + foodSortEgg.sugar + foodSortVanilla.sugar + foodSortSugar.sugar);
-        double sumFat = (foodSortWheat.fat + foodSortEgg.fat + foodSortVanilla.fat + foodSortSugar.fat);
+    double sumCalories = (foodSortWheat.kcal + foodSortEgg.kcal + foodSortVanilla.kcal + foodSortSugar.kcal);
+    double sumProtein = (foodSortWheat.protein + foodSortEgg.protein + foodSortVanilla.protein + foodSortSugar.protein);
+    double sumCarbs = (foodSortWheat.carbs + foodSortEgg.carbs + foodSortVanilla.carbs + foodSortSugar.carbs);
+    double sumSugar = (foodSortWheat.sugar + foodSortEgg.sugar + foodSortVanilla.sugar + foodSortSugar.sugar);
+    double sumFat = (foodSortWheat.fat + foodSortEgg.fat + foodSortVanilla.fat + foodSortSugar.fat);
 
-    /* til sidst ønsker jeg at udregne det totale ernæringsindhold for hele kagen. Først tages calculatedTotal og divideres med 100,
+    // kagen indeholder følgende per 100 g.
+    System.out.printf("\nKagen indeholder per 100 gram:\n" +
+        "Kalorier:%19.2f g\n"+ "Protein:%20.2f g\n"+"Kulhydrater:%16.2f g\n"+"Sukker:%21.2f g\n" + "Fedt:%23.2f g\n"
+        ,sumCalories,sumProtein,sumCarbs,sumSugar,sumFat);
+
+        /* til sidst ønsker jeg at udregne det totale ernæringsindhold for hele kagen. Først tages calculatedTotal og divideres med 100,
     for at gøre det nemmere at regne totalen ud */
 
-        int totalCalculated = (calculatedTotal / 100);
-        double totalCalories = (sumCalories * totalCalculated);
-        double totalProtein = (sumProtein * totalCalculated);
-        double totalCarbs = (sumCarbs * totalCalculated);
-        double totalSugar = (sumSugar * totalCalculated);
-        double totalFat = (sumFat * totalCalculated);
-
-        System.out.println("\nKagen indeholder per 100 gram: \n\t" + sumCalories + " kcal \n\t" + sumProtein + " g protein\n\t"
-                + sumCarbs + " g kulhydrater \n\t" + sumSugar + " g sukker \n\t" + sumFat + " g fedt \n");
-
-        System.out.println("Det svarer til at kagen totalt har følgende ernæringsindhold: \n\t" + totalCalories
-                + " kcal \n\t" + totalProtein + " g protein \n\t" + totalCarbs + " g kulhydrater \n\t"
-                + totalSugar + " g sukker \n\t" + totalFat + " g fedt");
-    }
+    obj.calculatedEnergy(sumCalories,sumProtein,sumCarbs,sumSugar,sumFat);
+  }
 }
-
 class FoodSort {
-    public double kcal;
-    public double protein;
-    public double carbs;
-    public double sugar;
-    public double fat;
+  public double kcal;
+  public double protein;
+  public double carbs;
+  public double sugar;
+  public double fat;
 
-    //Constructor
-    public FoodSort(double kcal, double protein, double carbs, double sugar, double fat) {
-        this.kcal = kcal;
-        this.protein = protein;
-        this.carbs = carbs;
-        this.sugar = sugar;
-        this.fat = fat;
-    }
+  //Constructor
+  public FoodSort(double kcal, double protein, double carbs, double sugar, double fat) {
+    this.kcal = kcal;
+    this.protein = protein;
+    this.carbs = carbs;
+    this.sugar = sugar;
+    this.fat = fat;
 
+  }
 }
