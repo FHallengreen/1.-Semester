@@ -7,42 +7,57 @@ public class Main {
   Scanner scan = (new Scanner(System.in)).useLocale(Locale.ENGLISH);
   int amountOfPeople = scan.nextInt();
 
-  int calculatedWheat;
-  int calculatedEgg;
-  int calculatedVanilla;
-  int calculatedSugar;
-  int calculatedEgg_TOGRAM;
+  //Indsæt global ratio.
+  //Som bruges til at udregne "mængde"
+  int totalWeightOfCake = 0;
+  int eggToGram = 60;
+  int totalCalories = 0;
 
-  // Vi opretter en metode til at definere opskriften. Først antal personer og så ingredienser.
+  //Standard er altid 4, så denne kan deklareres som final.
+  final int defaultPeople = 4;
 
-  public void recipe(int defaultPeople, int wheat, int egg, int vanilla, int sugar) {
+  //Navn, mængde
+  public int printIngredients(int howManyPeople, int amount){
+    return amount * howManyPeople;
+  }
+
+  // Vi opretter en metode til at definere opskriften og udregne opskriften.
+  public void recipe( int wheat, int egg, int vanilla, int sugar) {
     // Vi regner nu sammen hvor mange gram der skal bruges af de forskellige ingredienser.
     int calculatedAmount = amountOfPeople / defaultPeople;
-    calculatedWheat = wheat * calculatedAmount;
-    calculatedEgg = (egg * calculatedAmount);
-    calculatedVanilla = vanilla * calculatedAmount;
-    calculatedSugar = sugar * calculatedAmount;
-    calculatedEgg_TOGRAM = calculatedEgg * 60;
+
+ // totalWeightofCake += bruges til at addere vores globale totalWeight sammen.
+    totalWeightOfCake +=  printIngredients(calculatedAmount, wheat);
+    totalWeightOfCake +=  printIngredients(calculatedAmount,eggToGram*egg);
+    totalWeightOfCake +=  printIngredients(calculatedAmount, vanilla);
+    totalWeightOfCake +=  printIngredients(calculatedAmount, sugar);
 
     System.out.printf("For at lave Fredes Drømmekage til %s personer, skal du bruge: " +
             "\nHvede:%22s g  \nÆg:%21s stks.\nVanilje:%20s g \nSukker:%21s g\n", amountOfPeople,
-        calculatedWheat, calculatedEgg, calculatedVanilla, calculatedSugar);
+        printIngredients(calculatedAmount,wheat),
+        printIngredients(calculatedAmount,egg),
+        printIngredients(calculatedAmount,vanilla),
+        printIngredients(calculatedAmount,sugar));
+  }
+
+
+  public void printTotalWeight(String name){
+    System.out.printf("\n%s vejer:%4s g \n" ,name, totalWeightOfCake);
 
   }
-  public void calculatedRecipe(int newWheat, int newEgg, int newVanilla, int newSugar) {
-    int totalWeight = newWheat + newEgg + newVanilla + newSugar;
 
-    System.out.printf("\nKagen vejer:%16s g \n" ,totalWeight);
-
-  }
   public void calculatedEnergy(double sumCalories,double sumProtein,double sumCarbs,double sumSugar,double sumFat){
+    int calculatedEnergy = (totalWeightOfCake / 100);
+    double totalCalories = sumCalories * calculatedEnergy;
+    double totalProtein = sumProtein * calculatedEnergy;
+    double totalCarbs = sumCarbs * calculatedEnergy;
+    double totalSugar = sumSugar * calculatedEnergy;
+    double totalFat = sumFat * calculatedEnergy;
 
-    double totalCalories = sumCalories;
-
-    System.out.printf("Det svarer til at kagen totalt har følgende ernæringsindhold: %s",totalCalories);
+    System.out.printf("\nDet svarer til at kagen totalt har følgende ernæringsindhold:\n " +
+        "Kalorier %18.2f g \nProtein: %19.2f g\nKulhydrater: %15.2f g\nSukker: %20.2f g\nFedt: %22.2f g\n",totalCalories, totalProtein, totalCarbs, totalSugar, totalFat);
 
   }
-
   public static void main(String[] args) {
 
     Scanner scan = (new Scanner(System.in)).useLocale(Locale.ENGLISH);
@@ -51,9 +66,8 @@ public class Main {
 
     // baseret på vores ingredienser bliver defineret. Følgende opskrift er 4 personer.
     Main obj = new Main();
-    obj.recipe(4, 120, 2, 5, 85);
-    obj.calculatedRecipe(obj.calculatedWheat, obj.calculatedEgg_TOGRAM, obj.calculatedVanilla, obj.calculatedSugar);
-
+    obj.recipe( 330, 2, 5, 135);
+    obj.printTotalWeight("Fredes Drømmekage");
 
     /* Ekstra --ERNÆRINGSINDHOLD--
                 Laver en til at definere ernæringsindholdet i følgende rækkefølge:
