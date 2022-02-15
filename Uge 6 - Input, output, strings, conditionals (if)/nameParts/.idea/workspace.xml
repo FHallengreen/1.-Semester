@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ac27283-62ea-48bc-984f-7bc48758cdc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cake/src/com/company/FoodSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cake/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cake/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FindFemFejl/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FindFemFejl/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nameParts/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nameParts/com/company/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uge 7 - Metoder/NamepartsII/NamepartsII.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge 7 - Metoder/langtude/out/production/langtude/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge 7 - Metoder/langtude/out/production/langtude/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge 7 - Metoder/sayHello/out/production/sayHello/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge 7 - Metoder/sayHello/out/production/sayHello/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge 7 - Metoder/sayHello/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge 7 - Metoder/sayHello/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DetFjerdeMellemrum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -122,6 +123,7 @@
       <workItem from="1644315890748" duration="1949000" />
       <workItem from="1644392570055" duration="992000" />
       <workItem from="1644519550666" duration="371000" />
+      <workItem from="1644915801972" duration="1022000" />
     </task>
     <servers />
   </component>
