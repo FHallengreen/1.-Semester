@@ -4,9 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         String sarcasm = "dU eR SøRme gOd TiL aT KoDe";
-/*      int length      = Sarcasm.length(27);
-        System.out.println(length);*/
-
         // Capitalize //
         System.out.println(sarcasm);
 

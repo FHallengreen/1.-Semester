@@ -7,7 +7,6 @@ public class Main {
         int firstIndex = fullName.indexOf(space);
         String firstName = fullName.substring(0, firstIndex);
 
-
         int lastIndex = fullName.lastIndexOf(space);
         String lastName = fullName.substring(lastIndex);
 
@@ -17,15 +16,20 @@ public class Main {
             middleName = fullName.substring(firstIndex, lastIndex);
             System.out.print(firstName);
             System.out.print(middleName);
-            System.out.print(lastName);
+            System.out.println(lastName);
         } else {
             System.out.print(firstName);
-            System.out.print(lastName);
+            System.out.println(lastName);
         }
+    }
+
+    public void writeNameParts(String lastName, String firstName, String middleName) {
+        System.out.println(firstName + lastName);
     }
 
     public static void main(String[] args) {
         Main obj = new Main();
         obj.writeNameParts("Frederik Hallengreen Hansen");
+        obj.writeNameParts("Hansen", "Frederik ", null);
     }
 }
