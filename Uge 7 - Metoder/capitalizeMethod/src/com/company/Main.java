@@ -4,7 +4,8 @@ public class Main {
     public String capitalize (String name){
         String capital =  name.substring(0, 1).toUpperCase();
         String lowercase = name.substring(1).toLowerCase();
-        return capital + lowercase;
+        String correct = capital + lowercase;
+        return correct;
     }
 
     public static void main(String[] args) {
