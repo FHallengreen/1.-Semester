@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ac27283-62ea-48bc-984f-7bc48758cdc1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Uge 7 - Metoder/NamepartsII/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge 7 - Metoder/NamepartsII/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Uge 7 - Metoder/Studentlist/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Uge 7 - Metoder/Studentlist/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +121,7 @@
       <workItem from="1644392570055" duration="992000" />
       <workItem from="1644519550666" duration="371000" />
       <workItem from="1644915801972" duration="1022000" />
+      <workItem from="1645019427528" duration="1281000" />
     </task>
     <servers />
   </component>
