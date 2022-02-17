@@ -15,8 +15,6 @@ public class Main {
   int yourDecision;
   int diceRoll;
   int battleDistance;
-  boolean win;
-  boolean loss;
 
   Scanner in = new Scanner(System.in);
 
@@ -179,7 +177,7 @@ public class Main {
   public void scout() {
     if (battleDistance >= 0 && battleDistance <= 2) {
       System.out.println("Fjenden er " + battleDistance + " felter væk");
-    } else if (battleDistance <=0 && battleDistance >= -3 ) {
+    } else if (battleDistance <= 0 && battleDistance >= -3) {
       System.out.println("Fjenden er " + battleDistance + " felter væk");
     } else System.out.print("");
   }
@@ -227,7 +225,8 @@ public class Main {
       }
 
     } else if (diceRoll == 3) // ATTACK
-    {diceRoll();
+    {
+      diceRoll();
       do {
         int usedFirePower = 100 * diceRoll();
         enemyFirePower -= usedFirePower;
@@ -256,7 +255,8 @@ public class Main {
           int hit_1 = 1;
           playerSoldiers -= hit_1;
           System.out.println("Fjenden ramte dig");
-        } else System.out.print("");;
+        } else System.out.print("");
+        ;
         break;
       }
       while (enemyFirePower > 0);
@@ -265,7 +265,7 @@ public class Main {
     endGame();
   }
 
-  public int endGame() {
+  public void endGame() {
     if (playerPosition >= 10 || enemySoldiers <= 0) {
       System.out.println("__________________________________________________________________________");
       System.out.println("\n\nDU HAR VUNDET!! FLOT SEJR");
@@ -279,7 +279,7 @@ public class Main {
       System.out.println("Du har " + enemyFirePower + " ildkraft tilbage");
       System.out.println("__________________________________________________________________________");
 
-    } return
+    }
   }
 
 
