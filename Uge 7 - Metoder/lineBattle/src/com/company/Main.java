@@ -1,6 +1,5 @@
 package com.company;
 
-import java.awt.*;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -256,7 +255,6 @@ public class Main {
           playerSoldiers -= hit_1;
           System.out.println("Fjenden ramte dig");
         } else System.out.print("");
-        ;
         break;
       }
       while (enemyFirePower >= 0);
@@ -266,15 +264,15 @@ public class Main {
   public void endGame() {
     if (playerPosition >= 10 || enemySoldiers <= 0) {
       System.out.println("__________________________________________________________________________");
-      System.out.println("\n\nDU HAR VUNDET!! FLOT SEJR");
-      System.out.println("Du har " + playerSoldiers + " soldater tilbage");
-      System.out.println("Du har " + playerFirePower + " ildkraft tilbage");
+      System.out.println("---------------------DU HAR VUNDET!! FLOT SEJR----------------------------");
+      System.out.println("---------------------Du har " + playerSoldiers + " soldater tilbage---------------------------");
+      System.out.println("--------------------Du har " + playerFirePower + " ildkraft tilbage--------------------------");
       System.out.println("__________________________________________________________________________");
     } else if (enemyPosition <= -10 || playerSoldiers <= 0) {
       System.out.println("__________________________________________________________________________");
-      System.out.println("\n\nDU HAR TABT!!");
-      System.out.println("Fjenden har " + enemySoldiers + " soldater tilbage");
-      System.out.println("Du har " + enemyFirePower + " ildkraft tilbage");
+      System.out.println("--------------------------DU HAR TABT!!-----------------------------------");
+      System.out.println("----------------Fjenden har " + enemySoldiers + " soldater tilbage---------------------------");
+      System.out.println("---------------Fjenden har " + enemyFirePower + " ildkraft tilbage------------------------------");
       System.out.println("__________________________________________________________________________");
 
     }
