@@ -69,23 +69,21 @@ public class Main {
     {
       playerAttacks();
     }
+    calculateDistance();
     enemy();
-
-
-    endGame();
-
     calculateDistance();
     scout();
     System.out.printf("STATUS: \nDu har: %s soldater i live og %s ildkraft tilbage.\nTraf næste beslutning..\n", playerSoldiers, playerFirePower);
+    endGame();
     return calculateNextMove();
   }
 
   public int calculateDistance() {
-    if (playerPosition < 0 && enemyPosition > 0) {
+    if (playerPosition <= -1 && enemyPosition >= 1) {
       battleDistance = enemyPosition - playerPosition;
-    } else if (battleDistance > 0 && enemyPosition > 0) {
+    } else if (playerPosition >= 1 && enemyPosition >= 1) {
       battleDistance = enemyPosition - playerPosition;
-    } else if (playerPosition > 0 && enemyPosition < 0) {
+    } else if (playerPosition >= 1 && enemyPosition <= -1) {
       battleDistance = playerPosition - enemyPosition;
     } else {
       battleDistance = playerPosition + enemyPosition;
@@ -170,8 +168,10 @@ public class Main {
       } else System.out.println("MISS!");
       break;
     }
-    while (playerFirePower > 0);
-
+    while (playerFirePower >= 0);
+    if (playerFirePower <= 0){
+      System.out.println("Du har ikke mere ildkraft tilbage. Ryk enten frem eller tilbage.");
+    }
   }
 
   public void scout() {
@@ -207,16 +207,16 @@ public class Main {
       if (enemyPosition >= 10) {
         if (diceRoll == 1 || diceRoll == 2) {
           int move = 1;
-          enemyPosition -= move;
+          enemyPosition += move;
         } else if ((diceRoll == 3 || diceRoll == 4)) {
           int move = 2;
-          enemyPosition -= move;
+          enemyPosition += move;
           int usedFirePower = 250;
           enemyFirePower += usedFirePower;
 
         } else if (diceRoll == 5 || diceRoll == 6) {
           int move = 3;
-          enemyPosition -= move;
+          enemyPosition += move;
           int usedFirePower = 250;
           enemyFirePower += usedFirePower;
         }
@@ -259,10 +259,8 @@ public class Main {
         ;
         break;
       }
-      while (enemyFirePower > 0);
-      diceRoll();
+      while (enemyFirePower >= 0);
     }
-    endGame();
   }
 
   public void endGame() {
@@ -282,12 +280,13 @@ public class Main {
     }
   }
 
-
   public static void main(String[] args) {
     Main obj = new Main();
     welcome();
     System.out.println("Du starter på felt:             " + obj.firstMovePlayer());
     System.out.println("Fjenden starter på felt:         " + obj.firstMoveComputer());
+    System.out.println("Giv dine soldater deres første kommando:");
+    obj.calculateDistance();
     System.out.println(obj.calculateNextMove());
 
   }
