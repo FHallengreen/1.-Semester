@@ -135,6 +135,9 @@ public class Main {
 
   public void playerAttacks() {
     diceRoll();
+    if (playerFirePower <=0){
+
+    }
     do {
       int usedFirePower = 100 * diceRoll();
       playerFirePower -= usedFirePower;
@@ -226,6 +229,7 @@ public class Main {
     } else if (diceRoll == 3) // ATTACK
     {
       diceRoll();
+
       do {
         int usedFirePower = 100 * diceRoll();
         enemyFirePower -= usedFirePower;
