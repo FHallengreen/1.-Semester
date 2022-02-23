@@ -62,14 +62,24 @@ public class Main {
             System.out.println();
         }
     }
+
+    public void printMulTable(int width, int height){
+        for (int x = 1; x<=height;x++){
+            for (int y = 1; y<=width ;y++){
+                System.out.printf("%5d ",x*y);
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
     Main obj = new Main();
 //    obj.printOneLetter();
 //    obj.findIndexOf();
 //        obj.reverseString();
 //        obj.mockify();
-
-        obj.starblock(5,3);
+//        obj.starblock(5,3);
+        obj.printMulTable(10,10);
     }
 /*	String navn = "Frederik Hansen";
         String fornavn = "";
