@@ -36,7 +36,7 @@ public class Main {
     int smallestNumber = numbers[0];
     Main obj = new Main();
     obj.findLargestNumber(numbers, largestNumber);
-    obj.findSmallestNumber(numbers,smallestNumber);
+    obj.findSmallestNumber(numbers, smallestNumber);
   }
 
 }
