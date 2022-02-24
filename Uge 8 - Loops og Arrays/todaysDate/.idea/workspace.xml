@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9b56e7e-f154-44ef-b3b0-b437f23c6d34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../theTimeIs/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../findLargestNumberV2/out/production/findLargestNumberV2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../findLargestNumberV2/out/production/findLargestNumberV2/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../theTimeIs/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../theTimeIs/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +111,7 @@
       <updated>1645641572712</updated>
       <workItem from="1645641573908" duration="3440000" />
       <workItem from="1645687900370" duration="190000" />
+      <workItem from="1645697276111" duration="198000" />
     </task>
     <servers />
   </component>
