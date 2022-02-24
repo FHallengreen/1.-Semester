@@ -1,25 +1,55 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
-  String[] suit = "Heart ,Diamond ,Clubs ,Spades ".split(",");
-  String[] numbers = "A,2,3,4,5,6,7,8,9,10,J,Q,K".split(",");
+  String [] suits = {"Heart" , "Diamond", "Clubs", "Spades"};
+  String [] numbers = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+
+String[] deck = new String[52];
 
     public void createAllCards (){
-      List<String> deck = new ArrayList<String>();
-        for(String s:suit)
-            for(String n:numbers)
-                deck.add(s + n);
-        System.out.println(deck);
+      for (int i=0; i<suits.length;i++) {
+        for (int j = 0; j< numbers.length;j++) {
+
+          int nextStep = j + (i * 13);
+          deck[nextStep] = suits[i] + numbers[j];
+        }
+      }
     }
-  public void replaceTwoCards (String card1, String card2){
+
+    public void printCards(){
+//      replaceTwoCards();
+//      createAllCards();
+      System.out.println(Arrays.toString(deck));
+    }
+
+  public void replaceTwoCards (int card1, int card2){
+    String tempKort = deck[card2];
+    deck[card2] = deck[card1];
+    deck[card1] = tempKort;
+  }
 
 
+
+  public void shuffleCards (){
+      for (int i = 0;i < 500; i++){
+            Random random = new Random();
+            int randomNumber = random.nextInt(52);
+            int randomNumber2 = random.nextInt(52);
+          String tempKort = deck[randomNumber];
+          deck[randomNumber] = deck[randomNumber2];
+          deck[randomNumber2] = tempKort;
+        }
+      System.out.println(Arrays.toString(deck));
   }
     public static void main(String[] args) {
 	  Main obj = new Main();
-    obj.createAllCards();
+   obj.createAllCards();
+//    obj.printCards();
+        obj.shuffleCards();
     }
 }
