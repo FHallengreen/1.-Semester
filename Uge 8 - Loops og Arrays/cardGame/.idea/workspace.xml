@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38929c1e-7d2d-42d9-95b8-562c7df8d030" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Average/.idea/Average.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/cardGame/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../findLargestNumberV2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../findLargestNumberV2/findLargestNumberV2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/todaysDate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../theTimeIs/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Average/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Average/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../findLargestNumberV2/out/production/findLargestNumberV2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../findLargestNumberV2/out/production/findLargestNumberV2/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todaysDate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todaysDate/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +83,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -129,6 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645639846291</updated>
       <workItem from="1645639847447" duration="1722000" />
+      <workItem from="1645687825539" duration="448000" />
     </task>
     <servers />
   </component>
