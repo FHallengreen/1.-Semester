@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d24c8887-bf9d-4371-8969-eedbde69b65a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Uge 5 Intro, programmering, variabler og operatorer/Gæt et tal/Gæt et tal.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uge 5 Intro, programmering, variabler og operatorer/Tommeberegner/Tommeberegner.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uge 8 - Loops og Arrays/cardGame/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uge 8 - Loops og Arrays/cardGame/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uge 8 - Loops og Arrays/cardGame/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uge 8 - Loops og Arrays/cardGame/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uge 8 - Loops og Arrays/cardGame/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uge 8 - Loops og Arrays/cardGame/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uge 8 - Loops og Arrays/cardGame/cardGame.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644237732425</updated>
       <workItem from="1644237734133" duration="202000" />
+      <workItem from="1645705919501" duration="10000" />
     </task>
     <servers />
   </component>
