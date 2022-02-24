@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d580504-defd-4809-aa61-b5c58b4685e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Average.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/cardGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/out/production/cardGame/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardGame/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../findLargestNumberV2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../findLargestNumberV2/findLargestNumberV2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todaysDate/todaysDate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../theTimeIs/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../findLargestNumberV2/out/production/findLargestNumberV2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../findLargestNumberV2/out/production/findLargestNumberV2/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todaysDate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todaysDate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todaysDate/out/production/todaysDate/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../todaysDate/out/production/todaysDate/com/company/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +87,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Uge 7 - Metoder/findLargestNumber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -133,6 +119,7 @@
       <updated>1645637027004</updated>
       <workItem from="1645637028123" duration="832000" />
       <workItem from="1645637977920" duration="813000" />
+      <workItem from="1645688123293" duration="90000" />
     </task>
     <servers />
   </component>
