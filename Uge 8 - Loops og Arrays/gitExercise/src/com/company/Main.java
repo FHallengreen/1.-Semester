@@ -11,6 +11,7 @@ public class Main {
 
     public void askAboutAge (String age){
         System.out.println("Du er : " + age + " år gammel");
+        System.out.println("Stor ged");
     }
     public static void main(String[] args) {
         System.out.println("It works... enter name: ");
