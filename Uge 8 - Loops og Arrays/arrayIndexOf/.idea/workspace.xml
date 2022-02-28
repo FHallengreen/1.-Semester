@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38929c1e-7d2d-42d9-95b8-562c7df8d030" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/arrayIndexOf.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrayIndexOf/src/com/company/Main.java" afterDir="false" />
+    <list default="true" id="775005b9-6586-47db-b904-0c9a67b99e84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrayIndexOf.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Uge 9 - problemløsning/enigmaPrototype/.idea/description.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Uge 9 - problemløsning/enigmaPrototype/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Uge 9 - problemløsning/enigmaPrototype/.idea/misc.xml" afterDir="false" />
@@ -20,7 +20,7 @@
       <change afterPath="$PROJECT_DIR$/../../Uge 9 - problemløsning/enigmaPrototype/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Uge 9 - problemløsning/enigmaPrototype/enigmaPrototype.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Uge 9 - problemløsning/enigmaPrototype/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardGame/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +33,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="25WPPaPL4G7bKh1ukUOAPecAk7K" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="25YpfLYnL4O2e4axYDetCC3XCxK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -97,17 +95,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="cardGame" />
+      <module name="arrayIndexOf" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -124,19 +118,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="38929c1e-7d2d-42d9-95b8-562c7df8d030" name="Changes" comment="" />
-      <created>1645639846291</created>
+      <changelist id="775005b9-6586-47db-b904-0c9a67b99e84" name="Changes" comment="" />
+      <created>1645713976507</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645639846291</updated>
-      <workItem from="1645639847447" duration="1722000" />
-      <workItem from="1645687825539" duration="448000" />
-      <workItem from="1645689516854" duration="6963000" />
-      <workItem from="1645706017350" duration="34000" />
-      <workItem from="1645706101556" duration="8000" />
-      <workItem from="1645713953245" duration="618000" />
-      <workItem from="1646063559510" duration="54000" />
-      <workItem from="1646063669087" duration="22000" />
+      <updated>1645713976507</updated>
+      <workItem from="1645713977695" duration="1725000" />
+      <workItem from="1646063655554" duration="2000" />
     </task>
     <servers />
   </component>
@@ -153,8 +141,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
