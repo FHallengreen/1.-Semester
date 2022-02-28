@@ -1,0 +1,5 @@
+# undland at putte kompilerede filer (.class) i git
+out/
+# undlad
+.idea/
+*.iml
