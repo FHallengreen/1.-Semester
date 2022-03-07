@@ -5,7 +5,6 @@ class Client {
     private String name;        // attribute
     private int age;         // attribute
 
-
     //Constructor method
 
     public Client(String name, int age) {
