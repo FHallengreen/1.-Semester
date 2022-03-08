@@ -39,7 +39,7 @@ public class Date {
     }
 
   public String toString() {
-    return "Dato: "+ day +
+    return "   Dato: "+ day +
         "/" + month +
         "-" + year;}
 }
