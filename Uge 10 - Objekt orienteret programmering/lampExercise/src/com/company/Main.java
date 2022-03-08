@@ -7,6 +7,5 @@ public class Main {
         pressOnSwitch.switchLight();
         pressOnSwitch.switchLight();
         pressOnSwitch.switchLight();
-
     }
 }
