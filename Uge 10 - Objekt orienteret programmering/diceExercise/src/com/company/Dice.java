@@ -11,10 +11,6 @@ public class Dice {
         return faceValue;
     }
 
-    public Dice(int faceValue) {
-        this.faceValue = faceValue;
-    }
-
     public int getFaceValue() {
         return faceValue;
     }
