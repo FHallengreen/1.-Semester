@@ -20,8 +20,6 @@ public class Dice {
     }
     @Override
     public String toString() {
-        return "Dice {" +
-                "faceValue = " + faceValue +
-                '}';
+        return "faceValue = " + faceValue;
     }
 }
