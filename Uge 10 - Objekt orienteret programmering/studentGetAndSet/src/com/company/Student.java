@@ -16,14 +16,6 @@ public class Student {
         this.grade = grade;
     }
 
-    public int getGrade() {
-        return grade;
-    }
-
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-
     public String getName() {
         return name;
     }
@@ -55,7 +47,17 @@ public class Student {
     public void setTutor(boolean tutor) {
         isTutor = tutor;
     }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade (int grade){
+        this.grade = grade;
+    }
     public String toString (){
+
+
 
         return "Name: " + name + '\n' + "Er tutor: " + isTutor + '\n' + "Karakter: " + grade;
     }
