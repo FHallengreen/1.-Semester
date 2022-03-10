@@ -42,7 +42,10 @@ public class Catalogue {
     }
     return null;
   }
-  public void borrowItem (Item find){ // Will make found Item unavailable.
-    find.makeUnavailable();
+  public void borrowItem (Item found){ // Will make found Item unavailable.
+    found.makeUnavailable();
+  }
+  public void returnItem (Item found){ // will put found Item available.
+    found.makeAvailable();
   }
 }
