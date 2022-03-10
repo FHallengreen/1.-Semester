@@ -16,7 +16,6 @@ public class Catalogue {
     count++;
   }
 
-
   public Item[] getFullList() {
     return items;
   }
@@ -27,6 +26,9 @@ public class Catalogue {
       Item temp = items[i];
       if (temp != null) {
         availableItems[i] = temp;
+      }
+      else {
+        System.out.print(" ");
       }
     }
     return availableItems;
@@ -44,8 +46,10 @@ public class Catalogue {
   }
   public void borrowItem (Item found){ // Will make found Item unavailable.
     found.makeUnavailable();
+    System.out.println("Varen er blevet udlejet og derfor utilgængelig.");
   }
   public void returnItem (Item found){ // will put found Item available.
     found.makeAvailable();
+    System.out.println("Varen er blevet returneret og nu tilgængelig igen.");
   }
 }
