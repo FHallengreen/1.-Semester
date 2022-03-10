@@ -21,7 +21,7 @@ public class Catalogue {
     return items;
   }
 
-  public Item[] getAvailableItems() {
+  public Item[] getAvailableItems() { // Is supposed to make a new Item array leaving out null. However they are still displayed.
     Item[] availableItems = new Item[items.length];
     for (int i = 0; i < this.items.length; i++) {
       Item temp = items[i];
@@ -32,7 +32,8 @@ public class Catalogue {
     return availableItems;
   }
 
-  public Item findItem (String search){
+  public Item findItem (String search){ // Will search for a skateboard in the description.
+    // Using the for loop, it will check the whole array for a matching description.
     for (int i = 0; i < items.length; i++) {
       Item temp = items[i];
       if (temp != null && temp.getDescription().equals(search)){
@@ -41,7 +42,7 @@ public class Catalogue {
     }
     return null;
   }
-  public void borrowItem (Item find){
+  public void borrowItem (Item find){ // Will make found Item unavailable.
     find.makeUnavailable();
   }
 }
