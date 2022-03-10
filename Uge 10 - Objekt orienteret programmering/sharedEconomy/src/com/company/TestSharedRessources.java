@@ -44,7 +44,6 @@ public class TestSharedRessources {
             for (int i = 0; i < availableItems.length; i++) {
                 System.out.println(availableItems[i]);
             }
-        /*
         } else if (choice == 3) { // Add new Item to catalogue
             // Hardcoded values for new Item
             catalogue.addItem(new Item("Sport", "Tennisbolde"));
@@ -52,6 +51,8 @@ public class TestSharedRessources {
             // Hardcoded search criteria Skateboard
             Item found = catalogue.findItem("Skateboard");
             catalogue.borrowItem(found);
+            System.out.println(found.showAvailability());
+        /*
         } else if (choice == 5) { // make item available again
             // Hardcoded search criteria Skateboard
             Item found = catalogue.findItem("Skateboard");
