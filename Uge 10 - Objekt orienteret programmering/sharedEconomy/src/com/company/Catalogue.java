@@ -27,9 +27,6 @@ public class Catalogue {
       if (temp != null) {
         availableItems[i] = temp;
       }
-      else {
-        System.out.print(" ");
-      }
     }
     return availableItems;
   }
