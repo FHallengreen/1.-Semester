@@ -13,7 +13,7 @@ public class Main {
 
         Animal animal = new Animal("animalName");
         animal.speak();
-        Dog dog = new Dog("Preben");
+        Dog dog = new Dog("Preben", "WHITE");
         Cat cat = new Cat("Frans");
         animals.add(dog);
         animals.add(cat);
@@ -28,6 +28,7 @@ public class Main {
             tmp.speak(); // polymorfi
             if (tmp instanceof Dog) {
                 ((Dog) tmp).wag(); //
+                System.out.println(dog.getColor());
             }
             else if (tmp instanceof Cat){
                 ((Cat) tmp).throwUp();

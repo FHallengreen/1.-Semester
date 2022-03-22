@@ -4,8 +4,8 @@ public class Dog extends Animal{
 
     private String speak = "Wuf";
 
-    public Dog(String name) {
-        super(name);
+    public Dog(String name, String color) {
+        super(name, color);
     }
 
     public void wag(){
