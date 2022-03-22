@@ -9,7 +9,7 @@ public class Main {
 
         // Make animal list
 
-        ArrayList <Animal> animals = new ArrayList<>();
+        ArrayList<Animal> animals = new ArrayList<>();
 
         Animal animal = new Animal("animalName");
         animal.speak();
@@ -19,11 +19,19 @@ public class Main {
         animals.add(cat);
 
         animals.add(new Cat("Lonnie"));
-        for (int i = 0; i < animals.size(); i++) {
 
-            System.out.print(animals.get(i).getName() + " ");
+        Animal tmp;
+        for (int i = 0; i < animals.size(); i++) {
+            tmp = animals.get(i);
+            System.out.print(tmp.getName() + " ");
             System.out.print(animal + "");
-            animals.get(i).speak();
+            tmp.speak(); // polymorfi
+            if (tmp instanceof Dog) {
+                ((Dog) tmp).wag(); //
+            }
+            else if (tmp instanceof Cat){
+                ((Cat) tmp).throwUp();
+            }
         }
     }
 }

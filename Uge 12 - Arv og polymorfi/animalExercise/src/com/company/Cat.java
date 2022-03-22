@@ -7,7 +7,11 @@ public class Cat extends Animal {
         super(name);
     }
 
+    public void throwUp(){
+        System.out.println( " and throws up ");
+    }
+
     public void speak() {
-        System.out.println(speak);
+        System.out.print(speak);
     }
 }
