@@ -30,6 +30,7 @@ public class Main {
 
         int result = people.indexOf("Fred");
         people.remove(result);
-        System.out.println(people);
+        System.out.println(Arrays.toString(people.toArray()).replace("[", "").replace("]", ""));
+
     }
 }
