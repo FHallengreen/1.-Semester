@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2022-03-31T14:39:17.235Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="zZ_L8AiUd894HZrvfirM" version="16.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-31T14:41:10.670Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="xXpMh3mRvswv6TWIZIVC" version="16.6.5" type="github">
   <diagram name="Page-1" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
-    <mxGraphModel dx="2285" dy="1299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1435" dy="1299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="1c1d494c118603dd-1" value="ui.printString(player.attack(findSomething))" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="-100" y="20" width="1250" height="990" as="geometry" />
+          <mxGeometry y="30" width="1160" height="640" as="geometry" />
         </mxCell>
         <mxCell id="1c1d494c118603dd-2" value="Enemy" style="swimlane;html=1;startSize=20;" parent="1c1d494c118603dd-1" vertex="1">
-          <mxGeometry y="20" width="390" height="970" as="geometry" />
+          <mxGeometry y="20" width="390" height="620" as="geometry" />
         </mxCell>
         <mxCell id="kxXblEN4KOY5F-5qo8Tu-33" value="enemyAttacks" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=default;strokeColor=#000000;shadow=0;labelBackgroundColor=none;comic=0;fontFamily=Verdana;fontSize=9;startSize=20;" vertex="1" parent="1c1d494c118603dd-2">
           <mxGeometry x="80" y="310" width="110" height="37" as="geometry" />
@@ -59,7 +59,7 @@
           <mxGeometry x="120" y="570" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1c1d494c118603dd-3" value="Player" style="swimlane;html=1;startSize=20;" parent="1c1d494c118603dd-1" vertex="1">
-          <mxGeometry x="390" y="20" width="510" height="970" as="geometry" />
+          <mxGeometry x="390" y="20" width="510" height="620" as="geometry" />
         </mxCell>
         <mxCell id="kxXblEN4KOY5F-5qo8Tu-12" value="&lt;font style=&quot;font-size: 9px&quot;&gt;false&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=#000000;endSize=8;strokeColor=#000000;shape=connector;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1c1d494c118603dd-3" source="kxXblEN4KOY5F-5qo8Tu-27" target="kxXblEN4KOY5F-5qo8Tu-26">
           <mxGeometry x="-0.4167" y="-11" width="80" relative="1" as="geometry">
@@ -171,7 +171,7 @@
           <mxGeometry x="280" y="480" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1c1d494c118603dd-4" value="Gameengine" style="swimlane;html=1;startSize=20;" parent="1c1d494c118603dd-1" vertex="1">
-          <mxGeometry x="900" y="20" width="350" height="970" as="geometry" />
+          <mxGeometry x="900" y="20" width="260" height="620" as="geometry" />
         </mxCell>
         <mxCell id="kxXblEN4KOY5F-5qo8Tu-2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#000000;rounded=0;entryX=0.553;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1c1d494c118603dd-4" target="kxXblEN4KOY5F-5qo8Tu-5">
           <mxGeometry relative="1" as="geometry">
