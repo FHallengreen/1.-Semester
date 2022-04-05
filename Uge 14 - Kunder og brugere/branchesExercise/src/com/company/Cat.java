@@ -6,9 +6,15 @@ public class Cat extends Animal{
         super(name);
     }
 
+
     @Override
     public boolean eat(String foodType) {
         return true;
+    }
+
+    @Override
+    public String mood() {
+        return null;
     }
 
     @Override
