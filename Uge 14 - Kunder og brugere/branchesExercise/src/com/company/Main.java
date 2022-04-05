@@ -5,7 +5,11 @@ public class Main {
     public static void main(String[] args) {
 
         Dog Kim = new Dog("Kim");
+        Cat cat = new Cat("Øv");
         Kim.makeNoise();
-        System.out.println(Kim);
+        cat.makeNoise();
+        System.out.println(Kim + " " + Kim.makeNoise()) ;
+        System.out.println(cat + " "+ cat.makeNoise());
+
     }
 }
