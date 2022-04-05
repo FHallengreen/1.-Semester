@@ -11,6 +11,11 @@ public class Dog extends Animal {
         return true;
     }
 
+    @Override
+    public String mood() {
+        return " Smut Tarzan";
+    }
+
 
     @Override
     public String name() {

@@ -12,7 +12,7 @@ public class Main {
         System.out.println(cat + " "+ cat.makeNoise());
 
         Dog dog = new Dog("Vaseline Stine");
-        System.out.println(dog);
+        System.out.println(dog + dog.mood());
 
 
     }

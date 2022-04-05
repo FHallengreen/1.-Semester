@@ -10,6 +10,8 @@ public abstract class Animal {
 
     public abstract boolean eat(String foodType);
 
+    public abstract String mood();
+
     public abstract String name();
 
     @Override
