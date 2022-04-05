@@ -6,6 +6,6 @@ public class Main {
 
         Dog Kim = new Dog("Kim");
         Kim.makeNoise();
-        System.out.println(Kim.toString());
+        System.out.println(Kim);
     }
 }

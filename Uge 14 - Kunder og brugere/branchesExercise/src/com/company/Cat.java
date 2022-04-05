@@ -7,6 +7,11 @@ public class Cat extends Animal{
     }
 
     @Override
+    public boolean eat(String foodType) {
+        return true;
+    }
+
+    @Override
     public String name() {
         return "Benny";
     }
