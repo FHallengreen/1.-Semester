@@ -10,6 +10,11 @@ public abstract class Animal {
 
     public abstract String name();
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
     public abstract String makeNoise();
 
 }
