@@ -1,11 +1,14 @@
 package com.company;
 
-public class Producer extends Film{
+public class Producer{
+    private String producer;
 
-  public final String producer;
+    public Producer(String producer) {
+        this.producer = producer;
 
-  public Producer(String movieTitel, int releaseYear, String producer) {
-    super(movieTitel, releaseYear);
-    this.producer = producer;
-  }
+    }
+
+    public String toString(){
+        return " Producer: " + producer;
+    }
 }

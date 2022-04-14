@@ -1,26 +1,31 @@
 package com.company;
 
-import java.util.Date;
+public class Film{
+    private String movieTitel;
+    private int releaseYear;
+    private Producer producer;
 
-public class Film {
+    public Film (String movieTitel, int releaseYear){
+        this.movieTitel = movieTitel;
+        this.releaseYear = releaseYear;
+    }
 
-  private String movieTitel;
-  private int releaseYear;
+    public Film (String movieTitel){
+        this.movieTitel = movieTitel;
+        this.releaseYear = 2022;
+    }
 
-  public Film (String movieTitel, int releaseYear){
-    this.movieTitel = movieTitel;
-    this.releaseYear = releaseYear;
-  }
+    public Film (String movieTitel, int releaseYear, Producer producer){
+        this.movieTitel = movieTitel;
+        this.releaseYear = releaseYear;
+        this.producer = producer;
+    }
 
-  Date d = new Date();
-  int year = d.getYear();
-  public Film(String movieTitel) {
-    this.movieTitel = movieTitel;
-    this.releaseYear = year;
-  }
-
-  public Film() {
-
-  }
-
+    @Override
+    public String toString() {
+        if (producer == null){
+          return "Film " + movieTitel + " Udgivelsesår " + releaseYear + " No producer";
+        }
+        else return "Film " + movieTitel + " Udgivelsesår " + releaseYear + producer;
+    }
 }
