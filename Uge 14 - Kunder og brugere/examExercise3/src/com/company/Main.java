@@ -3,7 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-      Raflebæger obj = new Raflebæger(3);
-
+        RaffleCup obj = new RaffleCup(3);
+        System.out.println(obj.shake());
+        obj.seeNumbers();
+        System.out.println(obj.shake());
+        obj.seeNumbers();
     }
 }
