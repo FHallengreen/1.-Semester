@@ -2,8 +2,12 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) throws NullPointerException{
+    public static void main(String[] args) {
     Tekst obj = new Tekst();
-    obj.tilføj("Hej");
+    obj.addText("Ulla");
+    obj.addText("Fisse Ronni");
+    obj.addText("Ulla");
+        System.out.println(obj.uniqueLines());
     }
+
 }

@@ -2,24 +2,25 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Tekst extends Main {
-  public ArrayList <String> tekstLinjer;
+public class Tekst {
+    public ArrayList <String> textLines;
 
+    public Tekst (){
+        this.textLines = new ArrayList<String>();
+    }
 
-  public ArrayList<String> getTekstLinjer() {
-    return tekstLinjer;
-  }
+    public void addText (String text){
+        textLines.add(String.valueOf((text)));
+        System.out.println(textLines);
+    }
 
-  public void tilføj(String tekst) throws NullPointerException{
-    this.getTekstLinjer().add(tekst);
-  }
-
-
-
-  public int findAntalUnikke(){
-    int unikke = tekstLinjer.size();
-    System.out.println(unikke);
-    return unikke;
-  }
-
+    public int uniqueLines(){
+        ArrayList <String> uniqueLine = new ArrayList<>();
+        for (int i = 0; i < textLines.size(); i++) {
+            if (!uniqueLine.contains(textLines.get(i))){
+                uniqueLine.add(textLines.get(i));
+            }
+        }
+        return uniqueLine.size();
+    }
 }
