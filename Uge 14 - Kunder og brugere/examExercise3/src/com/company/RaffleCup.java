@@ -13,8 +13,8 @@ public class RaffleCup {
     }
 
     public int shake(){
-        list = new ArrayList<Integer>();
         int total = 0;
+        list = new ArrayList<Integer>();
         for (int i = 0; i < amountOfDices; i++) {
             Random num = new Random();
              int dice = num.nextInt(1,6);
